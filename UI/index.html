@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/56e158c451.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>FreeMentors || Home</title>
 </head>
@@ -14,7 +15,10 @@
                         <div class="brand">         
                             <div class="name"><a href="index.html">Free Mentors</a></div>
                         </div>
-                                        
+                        <div class="label">
+                                <label class="label"  for="toggle">&#9776;</label>
+                                <input type="checkbox" id="toggle"/>
+                            </div>          
                     </div> 
                     <div class="right-side">
                         <div class="nav-link-wrapper">
@@ -22,14 +26,15 @@
                         </div>
                                 
                         <div class="nav-link-wrapper">
-                            <a href="#">Sign-In</a>
+                            <a href="#"onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-In</a>
                         </div>
             
                         <div class="nav-link-wrapper">
-                            <a href="#signup">Sign-Up</a>
+                            <a href="#signup" onclick="document.getElementById('id01').style.display='none'" >Sign-Up</a>
                         </div>
+                        
+                        
                     </div>
-            
                 </div>
     </header>
     <section class="showcase" id='signup'>
@@ -78,11 +83,32 @@
                 </div>
                 
                 <div class="buttons">
-                        <p>Already Have an Account?<a href="#" style="color:dodgerblue">Sign In</a>.</p>
+                        
+                        <p>Already Have an Account?<a href="#" style="color:dodgerblue"onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-In</a></p>
                         <button class="button" type="submit">Create Account</button>
                 </div>
                 
             </form>
+
+        <form id="id01" class="modal">
+            <div class="form2">
+                <p>Please fill in this form to sign in to account</p>      
+                <div>
+                    <label>Email</label><br>
+                    <input type="email" placeholder="Email Address">
+                 </div>
+                
+                <div>
+                    <label>Password</label><br>
+                    <input type="password" placeholder="password">
+                </div>
+                <div class="buttons">
+                        <p>Already Have an Account?<a href="#signup" style="color:dodgerblue"onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Sign Up</a>.</p>
+                        <button class="button" type="submit">Sign-In</button>
+                </div>
+            </div>
+            
+        </form>
     </section>
     
     
