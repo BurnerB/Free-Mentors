@@ -6,6 +6,7 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Noto Sans KR', sans-serif;
+    
 }
 
 header{
@@ -176,6 +177,57 @@ p{
 #toggle{
     display: none;
 }
+.mentors{
+    margin:10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.mentor{
+    background:#cce5ff;
+    display: flex !important;
+    flex-direction: column;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+    border-radius: 2px;
+    width: 200px;
+    word-wrap: break-word;
+    white-space: normal;
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    margin:10px;
+    
+}
+.name{
+  background-color: #132f45;
+  padding:0;
+  margin:0;
+  color: #ffffff;
+  
+}
+
+.career{ 
+    background-color:blue;
+    padding: 3px;
+}
+
+span{
+    width: 100% !important;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+
+
+
+    
+
+
+
 
 @media(max-width:590px){
     .nav-link-wrapper{
