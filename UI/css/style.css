@@ -6,10 +6,9 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Noto Sans KR', sans-serif;
-    
 }
 
-header{
+.header{
     background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.1)),url(../images/mentoring.jpg);
     background-size: cover;
     background-position: center;
@@ -17,6 +16,12 @@ header{
     height: 100vh;
     background-repeat: no-repeat;
 }
+.header2{
+    background-color: #132f45;
+    width: 100%;
+    height: 55px;
+}
+
 
 
 /* Header styles */
@@ -78,7 +83,7 @@ header{
     float: left;
     width: 100%;
     margin-bottom: 0px;
-    margin-left: 550px;
+    margin-left: 5px;
     height: 25px;
     padding: 5px 10px;
     font-size: 14px;
@@ -172,6 +177,7 @@ label{
     cursor: pointer;
     width: 20%;
     opacity: 0.9;
+    border: none;
     border-radius: 3px;
 }
 button:hover {
@@ -212,6 +218,8 @@ p{
 #toggle{
     display: none;
 }
+
+/* Mentors  */
 .mentors{
     margin:10px;
     display: flex;
@@ -237,6 +245,12 @@ p{
     margin:10px;
     
 }
+
+.name a{
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
 .name{
   background-color: #132f45;
   padding:0;
@@ -255,7 +269,46 @@ span{
     font-size: 12px;
     color: #ffffff;
 }
+/* Mentor-info */
+.mentor-info{
+    margin: 50px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
+}
+.landing{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border-radius: 2px;
+}
+.banner{
+    background:#132f45;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 20vh;
+    background-repeat: no-repeat;
+    padding: 10px;
+    
+}
 
+.banner h2{
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.head{
+    background: #cce5ff;
+    width: 100%;
+    height: 20vh;
+    padding: 10px;
+}
+.head button{
+    width: 10%;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 
 
