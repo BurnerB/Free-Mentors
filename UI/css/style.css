@@ -32,6 +32,13 @@ body{
     display: flex;
     width: 100%;
 }
+
+.nav-wrapper2{
+    padding: 10px;
+    width: auto;
+    display: flex;
+    width: 100%;
+}
 .right-side{
     display: flex;
     text-align: right;
@@ -271,24 +278,27 @@ span{
 }
 /* Mentor-info */
 .mentor-info{
-    margin: 50px;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
+    margin: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 1fr;
+    
+    
 }
 .landing{
     display: flex;
     flex-wrap: wrap;
-    overflow-y: hidden;
-    white-space: nowrap;
     border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
+    height: 40vh;
 }
 .banner{
     background:#132f45;
     background-size: cover;
-    background-position: top;
     width: 100%;
     height: 20vh;
-    background-repeat: no-repeat;
     padding: 10px;
+    color: #ffffff;
     
 }
 
@@ -297,27 +307,53 @@ span{
     font-size: 2em;
 }
 
+
 .head{
     background: #cce5ff;
     width: 100%;
-    height: 20vh;
     padding: 10px;
+    
+
 }
 .head button{
     width: 10%;
-    display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
+    float: right;
 }
 
 
-
-
-
+.info-2{
+    width: 80%;
+    text-align-last:left;
     
+   
+}
+.info-2 p{
+    font-weight: 400;
+    text-indent: 0px;
+    text-align: justify;
+    
+}
 
-
-
+/* Sessions */
+.sessions{
+    background: #cce5ff;
+    color: #132f45;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
+}
+.session{
+    border-top: 1px solid #132f45;
+    padding: 10px;
+    border-radius: 2px;
+    background-position-x: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+.right-o{
+    margin-left: 20px;
+}
 
 @media(max-width:590px){
     .nav-link-wrapper{
