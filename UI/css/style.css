@@ -296,7 +296,7 @@ span{
     background:#132f45;
     background-size: cover;
     width: 100%;
-    height: 20vh;
+    height: auto;
     padding: 10px;
     color: #ffffff;
     
@@ -316,7 +316,7 @@ span{
 
 }
 .head button{
-    width: 10%;
+    width: 15%;
     padding-left: 5px;
     padding-right: 5px;
     float: right;
@@ -333,28 +333,73 @@ span{
     font-weight: 400;
     text-indent: 0px;
     text-align: justify;
-    
 }
+.reviewer input{
+    width: 100%; 
+}
+
 
 /* Sessions */
 .sessions{
+    background: #ffffff;
+}
+.pending{
     background: #cce5ff;
     color: #132f45;
     box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
+    padding: 0 10px;
+}
+
+.accepted{
+    background: #cce5ff;
+    color: #132f45;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
+    padding: 0 10px;
+    margin-top: 40px;
 }
 .session{
     border-top: 1px solid #132f45;
-    padding: 10px;
+    padding: 0px;
     border-radius: 2px;
-    background-position-x: center;
-    display: flex;
     height: 100%;
-    justify-content: center;
 }
-.right-o{
-    margin-left: 20px;
+.left-o {
+    background:#cce5ff;
+    display: inline-block;
+}
+.session button{
+    float: right;
+    width: 30%;
 }
 
+/* Review box */
+.review{
+    border-radius: 2px;
+    background: #cce5ff;
+    margin-top: 40px;
+    display: block;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
+    padding: 10px 0;
+}
+.review textarea{
+    width: 350%;
+}
+.radio{
+    display: flex;
+    padding-right: 10px;
+}
+input[type=radio] {
+    border: 0px;
+    height: 1em;
+    margin-right: 0;
+}
+.review button{
+    width: 40%;
+    display: block; 
+    margin: 0 auto; 
+    
+    
+}
 @media(max-width:590px){
     .nav-link-wrapper{
         text-align: center;
