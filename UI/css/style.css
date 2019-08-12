@@ -401,22 +401,27 @@ input[type=radio] {
 
 /* User requests */
 .requests{
-    margin-top:20px;
+    margin:40px 0px;
     width: 100%;
     height: 10%;
 }
+
 .banner2{
-    height: 15vh;
+    height: 13vh;
 }
 .info-3{
     background: #cce5ff;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
-
-.info-3 button{
-    width: 10%;
+.accept-decline{
+    display: flex;
+}
+.accept-decline button{
+    width: auto;
+    margin-left: 5px;
 }
 
 @media(max-width:590px){
