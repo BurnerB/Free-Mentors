@@ -397,9 +397,28 @@ input[type=radio] {
     width: 40%;
     display: block; 
     margin: 0 auto; 
-    
-    
 }
+
+/* User requests */
+.requests{
+    margin-top:20px;
+    width: 100%;
+    height: 10%;
+}
+.banner2{
+    height: 15vh;
+}
+.info-3{
+    background: #cce5ff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-3 button{
+    width: 10%;
+}
+
 @media(max-width:590px){
     .nav-link-wrapper{
         text-align: center;
