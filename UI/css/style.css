@@ -106,6 +106,7 @@ body{
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border-radius: 3px;
+    cursor: pointer;
 }
 .search input:focus, textarea:focus {
     background-color:transparent;
@@ -422,6 +423,47 @@ input[type=radio] {
 .accept-decline button{
     width: auto;
     margin-left: 5px;
+}
+
+/* Admin page */
+.mentors-admin{
+    flex-wrap: wrap;
+    width: 70%;
+    padding-top:80px;
+}
+
+.search-2{
+    width: 100%;
+}
+.search-2 input{
+    color:#132f45;
+    border-color: #132f45;
+    background-color: #cce5ff;
+    width: 90%;
+    padding: 10px 10px;
+}
+
+.search-2 button{
+    background-color:#132f45;
+    color: #ffffff;
+}
+.search input:focus, textarea:focus {
+    background-color:#cce5ff;
+    outline: none;
+}
+.mentor2{
+    font-size: 14px;
+}
+
+.user-mentor{
+    padding: 10px;
+}
+.user-mentor button{
+    width: 100%;
+    display: block; 
+    margin: 0 auto;
+    
+    
 }
 
 @media(max-width:590px){
