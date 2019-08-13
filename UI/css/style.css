@@ -286,12 +286,14 @@ span{
     
     
 }
-.landing{
+
+.top{
     display: flex;
     flex-wrap: wrap;
     border-radius: 2px;
     box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
-    height: 40vh;
+    height: auto;
+    margin-bottom: 10px;
 }
 .banner{
     background:#132f45;
@@ -428,8 +430,8 @@ input[type=radio] {
 /* Admin page */
 .mentors-admin{
     flex-wrap: wrap;
-    width: 70%;
-    padding-top:80px;
+    width: 100%;
+    margin-top:0px;
 }
 
 .search-2{
@@ -462,8 +464,22 @@ input[type=radio] {
     width: 100%;
     display: block; 
     margin: 0 auto;
-    
-    
+}
+
+/* Review delete */
+.review-2{
+    display: flex;
+    padding: 0;
+}
+.review-2 p{
+    text-indent: 0px;
+    text-align: justify;
+}
+.left-b{
+    padding-right: 5px;
+}
+.review-2 button{
+    height: 10%;
 }
 
 @media(max-width:590px){
