@@ -30,7 +30,9 @@ body{
     position:fixed;
     width: auto;
     display: flex;
+    justify-content: space-between;
     width: 100%;
+    white-space: nowrap;
 }
 
 .nav-wrapper2{
@@ -43,6 +45,10 @@ body{
     display: flex;
     text-align: right;
 }
+.brand{
+    display: flex;
+}
+
 .brand a{
     margin-right: 20px;
     font-size: 1.5em;
@@ -482,18 +488,37 @@ input[type=radio] {
     height: 10%;
 }
 
-@media(max-width:590px){
-    .nav-link-wrapper{
-        text-align: center;
-        width: 100%;
+.nav-wrapper .icon {
+    display: none;
+  }
+
+@media(max-width:768px){
+    .nav-wrapper{
+        display: block;
+    }
+    .right-side{
         display: none;
     }
-
-    .label label{
+    .nav-wrapper a.icon {
         display: block;
-        cursor: pointer;
+        position: absolute;
+        right: 10px;
     }
-    .nav-link-wrapper a{
+    .right-side.responsive {
+        position: relative;
+        margin: inherit;
+        padding: 0;
+        right: 10px;
+        width: auto;
+    }
+    .right-side.responsive .icon {
         display: block;
+        position: absolute;
+        right: 10px;
+    }
+    .right-side.responsive{
+        float: none;
+        display: inline;
+        text-align: left;
     }
 }
