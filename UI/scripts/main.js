@@ -1,7 +1,10 @@
 let nav = document.getElementById('nav');
 
 window.onscroll = function(){
-    if(window.pageYOffset>100){
+    if(nav==null){
+      return
+    }
+    else if(window.pageYOffset>100){
         nav.style.background = "#132f45";
     }
     else{
