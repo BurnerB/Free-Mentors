@@ -39,6 +39,7 @@ body{
     padding: 10px;
     width: auto;
     display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 .right-side{
@@ -257,6 +258,7 @@ p{
     scroll-snap-align: start;
     flex: 0 0 auto;
     margin:10px;
+    font-size: 14px;
     
 }
 
@@ -289,10 +291,7 @@ span{
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 3fr 1fr;
-    
-    
 }
-
 .top{
     display: flex;
     flex-wrap: wrap;
@@ -333,7 +332,7 @@ span{
 
 
 .info-2{
-    width: 80%;
+    width: 100%;
     text-align-last:left;
     
    
@@ -461,6 +460,7 @@ input[type=radio] {
 }
 .mentor2{
     font-size: 14px;
+    
 }
 
 .user-mentor{
@@ -490,11 +490,21 @@ input[type=radio] {
 
 .nav-wrapper .icon {
     display: none;
-  }
+}
+.nav-wrapper2 .icon {
+    display: none;
+}
 
 @media(max-width:768px){
     .nav-wrapper{
         display: block;
+    }
+    .nav-wrapper2{
+        display: block;
+        background: #132f45;
+        position: fixed;
+        z-index: 1;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
     }
     .right-side{
         display: none;
@@ -502,7 +512,12 @@ input[type=radio] {
     .nav-wrapper a.icon {
         display: block;
         position: absolute;
-        right: 10px;
+        right: 5px;
+    }
+    .nav-wrapper2 a.icon {
+        display: block;
+        position: absolute;
+        right: 5px;
     }
     .right-side.responsive {
         position: relative;
@@ -510,6 +525,7 @@ input[type=radio] {
         padding: 0;
         right: 10px;
         width: auto;
+        z-index: 1;
     }
     .right-side.responsive .icon {
         display: block;
@@ -518,7 +534,46 @@ input[type=radio] {
     }
     .right-side.responsive{
         float: none;
-        display: inline;
+        display: block;
         text-align: left;
+        
+        
+    }
+    .form{
+        display: block;
+        width: 100%;
+    }
+    .button{
+        width: auto;
+    }
+    .form2{
+        width: auto;
+        margin-top: 100px;
+    }
+    .mentor-info{
+        display:block;
+
+    }
+    .mentors-admin{
+        width:100%;
+        margin: inherit;
+    }
+    .mentor2{
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    
+}
+
+
+@media(max-width:500px){
+    .mentor2{
+        font-size: 14px;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
