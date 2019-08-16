@@ -17,3 +17,13 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Responsive nav-bar
+function myFunction() {
+  var x = document.getElementById("righto");
+  if (x.className === "right-side") {
+    x.className += " responsive";
+  } else {
+    x.className = "right-side";
+  }
+} 
