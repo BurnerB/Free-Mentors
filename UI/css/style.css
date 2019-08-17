@@ -292,6 +292,11 @@ span{
     grid-gap: 20px;
     grid-template-columns: 3fr 1fr;
 }
+.mentor-info2{
+    display:block;
+    margin: 20px;
+    /* width: 100%; */
+}
 .top{
     display: flex;
     flex-wrap: wrap;
@@ -341,6 +346,7 @@ span{
     font-weight: 400;
     text-indent: 0px;
     text-align: justify;
+    padding-right: 10px;
 }
 .reviewer input{
     width: 100%; 
@@ -409,20 +415,26 @@ input[type=radio] {
 
 /* User requests */
 .requests{
-    margin:40px 0px;
-    width: 100%;
     height: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-right: inherit;
+    border-radius: 2px;
+    height: auto;
+    margin-bottom: 10px;
+    width: auto;
 }
 
 .banner2{
-    height: 13vh;
+    height: auto;
 }
 .info-3{
     background: #cce5ff;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .accept-decline{
     display: flex;
@@ -430,6 +442,7 @@ input[type=radio] {
 .accept-decline button{
     width: auto;
     margin-left: 5px;
+    height: 40px;
 }
 
 /* Admin page */
@@ -502,9 +515,8 @@ input[type=radio] {
     .nav-wrapper2{
         display: block;
         background: #132f45;
-        position: fixed;
+        position: relative;
         z-index: 1;
-        box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
     }
     .right-side{
         display: none;
@@ -512,7 +524,7 @@ input[type=radio] {
     .nav-wrapper a.icon {
         display: block;
         position: absolute;
-        right: 5px;
+        right: 10px;
     }
     .nav-wrapper2 a.icon {
         display: block;
@@ -525,7 +537,6 @@ input[type=radio] {
         padding: 0;
         right: 10px;
         width: auto;
-        z-index: 1;
     }
     .right-side.responsive .icon {
         display: block;
@@ -536,23 +547,29 @@ input[type=radio] {
         float: none;
         display: block;
         text-align: left;
-        
-        
+        box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
     }
     .form{
         display: block;
+    }
+    .form input{
+        width: 100%;
+    }
+    .form textarea{
         width: 100%;
     }
     .button{
         width: auto;
     }
     .form2{
-        width: auto;
+        /* width: 100%; */
         margin-top: 100px;
     }
     .mentor-info{
         display:block;
-
+    }
+    .mentor-info2{
+        display:block;
     }
     .mentors-admin{
         width:100%;
@@ -562,7 +579,12 @@ input[type=radio] {
         margin: 0 auto;
         margin-top: 10px;
         margin-bottom: 10px;
-        
+    }
+    .requests{
+        display: block;
+    }
+    .request-column{
+        margin-top: 10px;
     }
     
 }
