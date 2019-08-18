@@ -90,7 +90,7 @@ body{
 .search input{
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    color:#ffffff;
+    color:#fff;
     border-color: #fff;
     background-color: transparent;
     position: relative;
@@ -511,7 +511,7 @@ input[type=radio] {
     background-color:#132f45;
     color: #ffffff;
 }
-.search input:focus, textarea:focus {
+.search-2 input:focus, textarea:focus {
     background-color:#cce5ff;
     outline: none;
 }
