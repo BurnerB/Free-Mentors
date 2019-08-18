@@ -30,3 +30,12 @@ function myFunction() {
     x.className = "right-side";
   }
 } 
+
+// Review modal
+function openForm() {
+  document.getElementById("review").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("review").style.display = "none";
+}
