@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/56e158c451.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <title>FreeMentors || Home</title>
+    <title>FreeMentors || Mentor-info</title>
 </head>
 <body>
     <div class="header2">
@@ -27,29 +27,30 @@
                     </div>
         </div>
     </div>
-    <section class="mentor-info">
-        <div class="landing">
-            <div class="banner">
-                <h2>Marshall Mathers</h2>
-                <i class="fa fa-briefcase font-12"></i>
-                        <span>Musician</span>
-                <i class="fa fa-map-marker font-12"></i>
-                        <span>Nairobi, Kenya</span>
+    <section class="mentor-info2">
+            <div class="top">
+                    <div class="banner">
+                        <h2>Marshall Mathers</h2>
+                        <i class="fa fa-briefcase font-12"></i>
+                            <span>Musician</span>
+                        <i class="fa fa-map-marker font-12"></i>
+                            <span>Nairobi, Kenya</span>
+                    </div>
+                    <div class="head">
+                            <div class="info-2">
+                                    <p>Known professionally as Eminem,I'm a rapper, songwriter, record producer, record executive, film producer, and actor.</p>
+                                    <p>I am consistently cited as one of the greatest and most influential rappers of all time and labeled the "King of Hip Hop" by Rolling Stone magazine.</p>
+                            </div>
+                    </div>
+                    <div class="reviewer">
+                        <input type="text" placeholder="Questions" required>
+                        <button class = "button">Request Session</button>
+                    </div>
             </div>
-            <div class="head">
-                <button class = "button">Request Session</button>
-                <div class="info-2">
-                        <p>Known professionally as Eminem,I'm a rapper, songwriter, record producer, record executive, film producer, and actor.</p>
-                        <p>I am consistently cited as one of the greatest and most influential rappers of all time and labeled the "King of Hip Hop" by Rolling Stone magazine.</p>
-                        <div class="reviewer">
-                                <div>
-                                    <input type="text" placeholder="Questions" required>
-                                </div>
-                        </div>
-                </div>
-                
-            </div>
-        </div>
+
+
+        
+
 
         <div class="sessions">
             <div class="pending">
@@ -74,6 +75,27 @@
                                 </div>
                                 <button class="button">Cancel Request</button>
                             </div>
+
+                            <div class="session">
+                                    <p style="background:#132f45; color:white;"><b>Status:</b>Pending</p> 
+                                    <div class="left-o">
+                                        <p>Marshall Mathers</p>
+                                        <i class="fa fa-briefcase font-12"></i>
+                                        <span style="color:#132f45">Musician</span>
+                                        <p>24th,Jan 2019 2am</p> 
+                                    </div>
+                                    <button class="button">Cancel Request</button>
+                                </div>
+                        <div class="session">
+                                    <p style="background:#132f45; color:white;"><b>Status:</b>Pending</p> 
+                                    <div class="left-o">
+                                        <p>Marshall Mathers</p>
+                                        <i class="fa fa-briefcase font-12"></i>
+                                        <span style="color:#132f45">Musician</span>
+                                        <p>24th,Jan 2019 2am</p> 
+                                    </div>
+                                    <button class="button">Cancel Request</button>
+                                </div>
             </div>
 
             <div class="accepted">
@@ -85,7 +107,7 @@
                                 <span style="color:#132f45">Musician</span>
                                 <p>24th,Jan 2019 2am</p> 
                             </div>
-                            <button class="button" href="#review">Review</button>
+                            <button class="button" onclick="openForm()">Review</button>
                         </div>
             
                         <div class="session">
@@ -96,11 +118,13 @@
                                     <span style="color:#132f45">Musician</span>
                                     <p>24th,Jan 2019 2am</p> 
                                 </div>
-                                <button class="button" href="#review">Review</button>
+                                <button class="button" onclick="openForm()">Review</button>
                             </div>
             </div>
+        </div>
 
-            <div class="review" id="review">
+         <div class="review" id="review">
+                    <a class="close" onclick="closeForm()">&times;</a>
                     <p>Leave a review</p>
                     <div class="radio">
                         <input type="radio" name="score" value="1" checked>1<br>
@@ -114,16 +138,9 @@
                 </div>
                 <button class = "button">Leave Review</button>
             
-            </div>
         </div>
         
     </section>
-
-    <section class="sessions">
-           
-
-    </section>
-
 
     
 </body>
