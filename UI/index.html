@@ -14,33 +14,36 @@
                     <div class="left-side">
                         <div class="brand">         
                             <div class="app-name"><a href="index.html">Free Mentors</a></div>
-                        </div>
-                        <div class="label">
-                                <label class="label"  for="toggle">&#9776;</label>
-                                <input type="checkbox" id="toggle"/>
-                            </div>          
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction();document.getElementById('id01').style.display='none'">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>        
                     </div> 
-                    <div class="right-side">
+                    <div class="right-side" id="righto">
+                        <div class="search">
+                                <input type="text" placeholder="Search.." name="search">
+                            <button type="submit" class="search-btn">
+                                <i class="fa fa-search font-12"></i>
+                            </button>
+                        </div>        
                         <div class="nav-link-wrapper">
-                            <a href="index.html">Home</a>
-                        </div>
-                                
-                        <div class="nav-link-wrapper">
-                            <a href="#"onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-In</a>
+                            <a href="#"onclick="document.getElementById('id01').style.display='block';document.getElementById('righto').className = 'right-side'" style="width:auto;">Sign-In</a>
                         </div>
             
                         <div class="nav-link-wrapper">
-                            <a href="#signup" onclick="document.getElementById('id01').style.display='none'" >Sign-Up</a>
+                            <a href="#signup" onclick="document.getElementById('id01').style.display='none';document.getElementById('righto').className = 'right-side'" >Sign-Up</a>
                         </div>
                         
+                        <div class="nav-link-wrapper">
+                                <a href="admin-profile.html" onclick="document.getElementById('id01').style.display='none'" >Admin</a>
+                        </div>
+
+                        <div class="nav-link-wrapper">
+                            <a href="mentor-profile.html" onclick="document.getElementById('id01').style.display='none'" >Mentor</a>
+                    </div>
                         
                     </div>
-                    <div class="search">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit" class="search-btn">
-                            <i class="fa fa-search font-12"></i>
-                        </button>
-                    </div>
+                    
                 </div>
                 
     </div>
