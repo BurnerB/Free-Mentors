@@ -11,7 +11,6 @@ window.onscroll = function(){
         nav.style.background="transparent";
     }
 }
-
 let modal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
