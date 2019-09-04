@@ -4,7 +4,7 @@ window.onscroll = function(){
     if(nav==null){
       return
     }
-    else if(window.pageYOffset>100){
+    else if(window.pageYOffset>50){
         nav.style.background = "#132f45";
     }
     else{
@@ -39,3 +39,16 @@ function openForm() {
 function closeForm() {
   document.getElementById("review").style.display = "none";
 }
+
+//Mentors darken
+const mentorItems = document.querySelectorAll('.mentor')
+    mentorItems.forEach(mentorItem =>{
+      mentorItem.addEventListener('mouseover',()=>{
+        mentorItem.classList.add('img-darken')
+        })
+    })
+    mentorItems.forEach(mentorItem =>{
+      mentorItem.addEventListener('mouseout',()=>{
+        mentorItem.classList.remove('img-darken')
+        })
+    })

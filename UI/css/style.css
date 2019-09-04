@@ -22,12 +22,24 @@ body{
     height: 55px;
 }
 
-
-
 /* Header styles */
+.banner-info{
+    text-align: left;
+    padding-top: 90px;
+    margin-left: 10px;
+    display: flex;
+    color: #cce5ff;
+    width: 100%;
+}
+.banner-info h1{
+    width: 50%;
+    padding-top: 100px;
+    margin-right: 20px;
+}
 .nav-wrapper{
     padding: 10px;
     position:fixed;
+    z-index: 1;
     width: auto;
     display: flex;
     justify-content: space-between;
@@ -84,7 +96,8 @@ body{
 
 .search{
     display: flex;
-    height:auto; 
+    height:auto;
+    /* margin: auto; */
 }
 
 .search input{
@@ -107,6 +120,7 @@ body{
 
 .search button{
     margin-left: -1px;
+    margin-right: -6px;
     background-color:transparent;
     color: #ffffff;;
     border-color: #fff;
@@ -120,24 +134,32 @@ body{
     outline: none;
 }
 
+
 /* Signup form */
 .container{
     height: 800px;
     background: black;
 }
 .showcase{
-    background: #cce5ff;    
+    background:#fff;    
     padding: 1rem;
 }
 .form{
-    padding:1rem;;
-    display: grid;
-    grid-gap:20px;
-    grid-template-columns: repeat(3, 1fr);
-    background: #cce5ff;
-
+    padding:5px;
+    width: 30%;
+    background: #669999;
+    /* background-color:blue; */
+    text-align: center;
+    border: 2px solid #132f45;
+    border-radius: 20px;
+    margin-left: 200px;
 }
-
+.form input{
+    width: 50%;
+}
+.form button{
+    width:40%;
+}
 .form2{
     padding-left:3rem;
     margin: 5% auto 15% auto;
@@ -181,7 +203,7 @@ input:focus, textarea:focus {
 
 label{
     font-size: 16px;
-    color: #132f45;
+    color: #fff;
     text-align: right;
     margin-bottom: 0;
     padding-top: 10px;
@@ -205,9 +227,9 @@ button:hover {
     opacity:1;
 }
 
-p{
+form p{
     text-align: center;
-    color: #132f45;
+    color: #ffff;
 }
 
 /* login modal */
@@ -258,16 +280,49 @@ p{
     text-align: center;
     height: 100%;
     border-radius: 2px;
-    width: 200px;
+    width:220px;
     word-wrap: break-word;
     white-space: normal;
     scroll-snap-align: start;
     flex: 0 0 auto;
     margin:10px;
     font-size: 14px;
-    
+    cursor: pointer;
+}
+.avatar img{
+    border-radius: 50%;
+}
+.mentor-header{
+    display: flex;
+    justify-content: space-between;
+}
+.student img {
+    border-radius: 50%;
+    max-width: 100%;
+    float:right;
+}
+.info{
+    padding: 0px 10px;
+}
+.info p{
+    text-align: left;
+}
+.mentor .info a{
+    color: transparent;
+    transition: 1s;
+    font-weight: 600;
 }
 
+.mentor:hover .info a{
+    font-weight: 600;
+    color: #132f45;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(50%);
+    
+}
 .name a{
     color: #ffffff;
     text-decoration: none;
@@ -351,7 +406,7 @@ span{
 .info-2 p{
     font-weight: 400;
     text-indent: 0px;
-    text-align: justify;
+    text-align: left;
     padding-right: 10px;
 }
 .reviewer{
@@ -492,32 +547,46 @@ input[type=radio] {
 /* Admin page */
 .mentors-admin{
     flex-wrap: wrap;
-    width: 100%;
-    margin-top:0px;
+    margin:auto;
+    justify-content: space-between;
+    margin-right: 0;
 }
 
 .search-2{
     width: 100%;
+    justify-content: center;
+    
+    margin:0;
 }
 .search-2 input{
     color:#132f45;
     border-color: #132f45;
     background-color: #cce5ff;
-    width: 90%;
-    padding: 10px 10px;
+    width: 95%;
+    padding: 10px 0;
+    margin: auto;
+    margin-left: 0px;
+    /* margin-right: -1px; */
 }
 
 .search-2 button{
+    width: 10%;
     background-color:#132f45;
     color: #ffffff;
+    margin-left:0px;
+    margin-right:1px;
+    border: none;
+    border-radius: none;
 }
 .search-2 input:focus, textarea:focus {
     background-color:#cce5ff;
     outline: none;
 }
 .mentor2{
-    font-size: 14px;
-    
+    font-size: 15px;
+    margin-left:0px; 
+    width: 30%;
+    margin-right: 0px; 
 }
 
 .user-mentor{
@@ -552,7 +621,49 @@ input[type=radio] {
     display: none;
 }
 
+.top-info{
+    display: flex;
+    justify-content: space-between;
+}
+.comments{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-gap: 10px; */
+    background: #fff;
+    /* margin:auto; */
+}
+.comment{
+    background: #cce5ff;
+    margin: 50px;
+    margin-top: 5px;
+    padding: 10px;
+    width: 70%;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
+}
+.avatar2{
+    text-align: center;
+}
 @media(max-width:768px){
+    .banner-info{
+        width: 100%;
+    }
+    .banner-info h1{
+        font-size:30px;
+        width: 100%;
+        padding: 10px 0;
+        margin-right: 20px;
+    }
+    .form{
+        margin-right: 20px;
+        width: 100%;
+        height: 100%;
+    }
+    .form input{
+        width: 90%;
+    }
+}
+
+@media(max-width:700px){
     .nav-wrapper{
         display: block;
     }
@@ -595,15 +706,24 @@ input[type=radio] {
     }
     .form{
         display: block;
+        /* padding-right: 30px;
+        margin-right: 100px; */
     }
     .form input{
-        width: 100%;
-    }
+        width: 80%;
+    } 
     .form textarea{
+        width: 0%;
+    }
+    .form{
+        font-size:15px;
         width: 100%;
+        margin:0px 10px;
+        padding:0;
     }
     .button{
         width: auto;
+        z-index: -1;
     }
     .form2{
         width: auto;
@@ -620,7 +740,8 @@ input[type=radio] {
     }
     .mentors-admin{
         width:100%;
-        margin: inherit;
+        margin:inherit;
+        padding: inherit;
     }
     .mentor2{
         margin: 0 auto;
@@ -650,6 +771,28 @@ input[type=radio] {
         width: 70%;
         margin:10px;
     }
+
+    .banner-info{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 0px;
+        color: #cce5ff;
+    }
+    .banner-info h1{
+        font-size:20px;
+        width: 100%;
+        padding: 10px 0;
+        margin-right: 20px;
+    }
+
+    .comments{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     
 }
 
@@ -661,5 +804,11 @@ input[type=radio] {
         margin: 0 auto;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    .form{
+        font-size:14px;
+        width: 100%;
+        margin:0px 5px;
+        padding:0;
     }
 }
