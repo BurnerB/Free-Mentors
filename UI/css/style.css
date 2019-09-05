@@ -486,18 +486,24 @@ span{
 
 /* Review box */
 .review{
+    text-align: center;
     border-radius: 2px;
     background: #cce5ff;
     box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
     padding: 10px 0;
     display: none;
     position: fixed;
-    bottom: 0;
+    bottom: 60px;
     right: 20px;
     width: 20%;
 }
 .review textarea{
-    width: 220px;
+    width:auto;
+}
+.form3 textarea{
+    margin-top: 20px;
+    width: 90%;
+
 }
 .radio{
     display: flex;
@@ -657,6 +663,9 @@ footer{
     height: 50px;text-align: center;
     padding: 5px;
     padding-top: 15px;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
 }
 footer span{
