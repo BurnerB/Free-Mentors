@@ -652,6 +652,18 @@ input[type=radio] {
 .avatar2{
     text-align: center;
 }
+footer{
+    background: #132f45;
+    height: 50px;text-align: center;
+    padding: 5px;
+    padding-top: 15px;
+
+}
+footer span{
+    color: #fff;
+    margin: auto;
+    font-size: 15px;
+}
 @media(max-width:900px){
     .banner-info{
         width: 100%;
@@ -700,6 +712,9 @@ input[type=radio] {
     }
     .nav-wrapper{
         background: #132f45;
+    }
+    .mentors{
+        margin-top: 250px;
     }
 }
 
@@ -836,6 +851,7 @@ input[type=radio] {
     .right-side.responsive{
         background: #132f45;
     }
+    
     
     
 }
