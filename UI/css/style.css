@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+html{
+    min-height: 100%;
+    position: relative;
+}
 
 body{
     padding: 0px;
@@ -162,7 +166,6 @@ body{
     width:50%;
 }
 .form2{
-    /* padding-left:3rem; */
     margin: 5% auto 15% auto;
     border: 1px solid #888;
     background: #cce5ff;
@@ -172,17 +175,19 @@ body{
     text-align: center;
 }
 .form2 p{
-    width: 80%;
     height: 36px;
     padding: 6px;
     font-size: 16px;
     color: #132f45;
+    margin: auto;
 }
 .form2 label{
     color: #132f45;
 }
 .form2 button{
-    /* margin: 0 auto; */
+    margin: auto;
+    margin-bottom: 20px;
+
 }
 
 input{
@@ -634,6 +639,10 @@ input[type=radio] {
     display: flex;
     justify-content: space-between;
 }
+.top-info a{
+    text-decoration: none;
+    color: white;
+}
 .comments{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -652,6 +661,27 @@ input[type=radio] {
 .avatar2{
     text-align: center;
 }
+
+/* update  info page */
+.form3{
+    margin:auto;
+    margin-top: 100px;
+}
+.form3 label{
+    color: #132f45;
+}
+.form3 input{
+    width: 80%;
+}
+footer{
+    height: 40px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #132f45;
+}
 @media(max-width:900px){
     .banner-info{
         width: 100%;
@@ -669,6 +699,9 @@ input[type=radio] {
         height: 100%;
     }
     .form input{
+        width: 90%;
+    }
+    .form3 textarea{
         width: 90%;
     }
     .mentors{
@@ -696,6 +729,9 @@ input[type=radio] {
         height: 100%;
     }
     .form input{
+        width: 90%;
+    }
+    .form3 textarea{
         width: 90%;
     }
     .nav-wrapper{
@@ -752,9 +788,7 @@ input[type=radio] {
     .form input{
         width: 80%;
     } 
-    .form textarea{
-        width: 0%;
-    }
+
     .form{
         font-size:15px;
         width: 100%;
@@ -836,8 +870,6 @@ input[type=radio] {
     .right-side.responsive{
         background: #132f45;
     }
-    
-    
 }
 
 
@@ -868,6 +900,9 @@ input[type=radio] {
     .right-side.responsive{
         background: #132f45;
     }
+    .form3 textarea{
+        width: auto;
+    }
 }
 
 @media(max-width:400px){
@@ -896,5 +931,12 @@ input[type=radio] {
     }
     .right-side.responsive{
         background: #132f45;
+    }
+    .form3{
+        margin:auto;
+        margin-bottom:60px;
+    }
+    .form3 textarea{
+        width: auto;
     }
 }
