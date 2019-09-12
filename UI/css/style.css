@@ -681,7 +681,10 @@ footer{
 /* update  info page */
 .form3{
     margin:auto;
-    margin-top: 100px;
+    height: 60%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+
 }
 .form3 label{
     color: #132f45;
