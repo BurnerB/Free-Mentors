@@ -673,10 +673,10 @@ input[type=radio] {
 .avatar2{
     text-align: center;
 }
-<<<<<<< HEAD
+
 footer{
     background: #132f45;
-=======
+}
 
 /* update  info page */
 .form3{
@@ -689,24 +689,23 @@ footer{
 .form3 input{
     width: 80%;
 }
+.form3 textarea{
+    width: 80%;
+}
 footer{
->>>>>>> ft(ui):Create user dashboard:
     height: 40px;
     text-align: center;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
-<<<<<<< HEAD
     margin-top: 10px;
 }
 footer span{
     color: #fff;
     margin: auto;
     font-size: 15px;
-=======
     background: #132f45;
->>>>>>> ft(ui):Create user dashboard:
 }
 @media(max-width:900px){
     .banner-info{
@@ -899,12 +898,6 @@ footer span{
     .right-side.responsive{
         background: #132f45;
     }
-<<<<<<< HEAD
-    
-    
-    
-=======
->>>>>>> ft(ui):Create user dashboard:
 }
 
 
